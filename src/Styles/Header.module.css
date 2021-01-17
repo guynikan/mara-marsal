@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+
+.logo {
+  font-family: Royalacid;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-family: Royalacid_o;
+  font-size: 3rem;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li a {
+  padding: 20px;
+  color: #252525;
+  text-decoration: none;
+}
