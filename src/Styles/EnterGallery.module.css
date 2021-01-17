@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  margin: 0 100px;
+  justify-content: center;
+  max-height: calc(100vh - 170px);
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 0 10px;
+  line-height: 0;
+}
+
+.box > img {
+  width: 100%;
+  min-height: 100%;
+  /* transition: 0.5s; */
+  object-fit: cover;
+}
+
+.box:hover {
+  flex: 2 2 300px;
+}
