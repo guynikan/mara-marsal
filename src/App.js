@@ -1,4 +1,4 @@
-import "./Styles/reset.css";
+import "./reset.css";
 import "./App.css";
 import Home from "./Components/Home";
 import EnterGallery from "./Components/EnterGallery";
