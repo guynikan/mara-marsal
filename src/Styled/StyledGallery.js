@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import photo1 from "../Assets/Photos/session1/IMG_7153_.jpg";
-import photo2 from "../Assets/Photos/session2/photo2.png";
-import photo3 from "../Assets/Photos/session3/IMG_7332.jpg";
+import photo1 from "../Assets/Photos/shadows/photo1.jpg";
+import photo2 from "../Assets/Photos/shine/photo1.jpg";
+import photo3 from "../Assets/Photos/liquid/photo1.jpg";
 import illustration1 from "../Assets/Svg/Shadows.svg";
 import illustration2 from "../Assets/Svg/Shine.svg";
 

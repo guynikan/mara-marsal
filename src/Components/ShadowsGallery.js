@@ -7,12 +7,7 @@ function ShadowsGallery() {
 
   console.log("valor de shadows", photos);
 
-  return (
-    <div>
-      TESTE
-      <Galleria enableImageSelection={false} images={photos.shadows} />
-    </div>
-  );
+  return <div>TESTE</div>;
 }
 
 export default ShadowsGallery;
