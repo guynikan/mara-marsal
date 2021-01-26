@@ -9,7 +9,9 @@ function Header() {
 
   return (
     <StyledHeader>
-      <h1>Mara Marsal</h1>
+      <h1>
+        <a href="/">Mara Marsal</a>
+      </h1>
       <h2>1971</h2>
       <nav>
         <ul>

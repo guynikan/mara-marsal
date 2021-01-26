@@ -1,17 +1,32 @@
 import "./reset.css";
 import "./App.css";
-import Home from "./Components/Home";
-import EnterGallery from "./Components/EnterGallery";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import { SessionStorage } from "./Components/SessionContext";
+import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import { BrowserRouter as Router } from "react-router-dom";
-import ModalSwitch from "./Components/ModalSwitch";
+import Gallery from "./Components/Gallery";
+import Home from "./Components/Home";
 
 function App() {
   return (
     <>
       <Router>
-        <ModalSwitch />
-        <Home />
+        <Header />
+        <Switch>
+          <SessionStorage>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/galeria">
+              <Gallery />
+            </Route>
+          </SessionStorage>
+        </Switch>
         <Footer />
       </Router>
     </>
