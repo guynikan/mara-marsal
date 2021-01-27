@@ -1,14 +1,7 @@
 import React from "react";
-import StyledGallery from "../Styled/StyledGallery";
+import StyledHome from "../Styled/StyledHome";
 import Shadows from "../Styled/Shadows";
-import {
-  Link,
-  Route,
-  BrowserRouter as Router,
-  Switch,
-  useRouteMatch,
-} from "react-router-dom";
-import Gallery from "./Gallery";
+import { Link } from "react-router-dom";
 import { SessionContext } from "./SessionContext";
 
 const photos = ["shadows", "shine", "liquid"];
@@ -20,13 +13,13 @@ function Home() {
   }
   return (
     <>
-      <StyledGallery>
+      <StyledHome>
         {photos.map((e, i) => (
           <Link key={i} onClick={() => handleClick(e)} to={`/galeria`}>
             {e === "shadows" ? <Shadows /> : null}
           </Link>
         ))}
-      </StyledGallery>
+      </StyledHome>
     </>
   );
 }

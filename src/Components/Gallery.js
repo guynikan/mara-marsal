@@ -1,22 +1,19 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useRouteMatch,
-  Link,
-} from "react-router-dom";
-import Home from "./Home";
 import { SessionContext } from "./SessionContext";
-import Galleria from "react-grid-gallery";
-import ShadowsGallery from "./ShadowsGallery";
+import Gallery from "react-grid-gallery";
 
-const photos = ["shadows", "shine", "liquid"];
-
-function Gallery() {
+function Session() {
   const { session, photos } = React.useContext(SessionContext);
 
-  return <Galleria enableImageSelection={false} images={photos[session]} />;
+  return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <Gallery
+        rowHeight={400}
+        enableImageSelection={false}
+        images={photos[session]}
+      />
+    </div>
+  );
 }
 
-export default Gallery;
+export default Session;

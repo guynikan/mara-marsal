@@ -9,8 +9,8 @@ import {
 import { SessionStorage } from "./Components/SessionContext";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import Gallery from "./Components/Gallery";
 import Home from "./Components/Home";
+import Session from "./Components/Session";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/galeria">
-              <Gallery />
+              <Session />
             </Route>
           </SessionStorage>
         </Switch>

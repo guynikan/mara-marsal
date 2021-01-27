@@ -20,6 +20,8 @@ export const SessionStorage = ({ children }) => {
       array.push({
         src: images(`./${session}/photo${i}.jpg`).default,
         thumbnail: images(`./${session}/photo${i}.jpg`).default,
+        thumbnailWidth: 500,
+        thumbnailHeight: 800,
       });
     }
 
