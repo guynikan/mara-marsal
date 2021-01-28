@@ -2,7 +2,7 @@ import React from "react";
 import StyledHome from "../Styled/StyledHome";
 import Shadows from "../Styled/Shadows";
 import { Link } from "react-router-dom";
-import { SessionContext } from "./SessionContext";
+import { SessionContext } from "../Context/SessionContext";
 
 const photos = ["shadows", "shine", "liquid"];
 function Home() {

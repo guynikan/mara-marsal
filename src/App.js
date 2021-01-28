@@ -1,12 +1,7 @@
 import "./reset.css";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
-import { SessionStorage } from "./Components/SessionContext";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { SessionStorage } from "./Context/SessionContext";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
