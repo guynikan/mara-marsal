@@ -8,7 +8,6 @@ const photos = ["shadows", "shine", "liquid"];
 function Home() {
   const { session, setSession } = React.useContext(SessionContext);
   function handleClick(e) {
-    console.log("pegou o click do link", e);
     setSession(e);
   }
   return (
