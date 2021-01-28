@@ -19,9 +19,9 @@ function Header() {
             Contact
           </Link>
           <li>
-            <a href="#">
+            <div>
               <img src={instagramLogo} alt="instagram" />
-            </a>
+            </div>
           </li>
         </ul>
       </nav>
