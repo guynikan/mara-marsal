@@ -23,7 +23,7 @@ export const SessionStorage = ({ children }) => {
   const [containerWidth, setContainerWidth] = React.useState(0);
   const [photos, setPhotos] = React.useState({
     shadows: dinamicSet("shadows"),
-    // shine: dinamicSet("shine"),
+    shine: dinamicSet("shine"),
     liquid: dinamicSet("liquid"),
   });
 
