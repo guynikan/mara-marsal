@@ -41,13 +41,13 @@ function SessionShadow() {
         {photos[session].map((photo, i) => {
           if (i === 0 || i === 1)
             return (
-              <Cell area={imageGrid(photo.position)} height={3}>
+              <Cell key={i} area={imageGrid(photo.position)} height={3}>
                 <img src={photo.src} alt={`model-${i}`} />
               </Cell>
             );
 
           return (
-            <Cell area={imageGrid(photo.position)} height={1}>
+            <Cell key={i} area={imageGrid(photo.position)} height={1}>
               <StyledThreeGrid src={photo.src} />
             </Cell>
           );

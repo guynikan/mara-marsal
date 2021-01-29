@@ -3,7 +3,7 @@ import { Grid, Cell } from "styled-css-grid";
 import { SessionContext } from "../Context/SessionContext";
 import StyledThreeGrid from "../Styled/StyledThreeGrid";
 
-function SessionShine() {
+function SessionLiquid() {
   const {
     session,
     photos,
@@ -26,10 +26,10 @@ function SessionShine() {
   let areas = ["a", "b", "c", "d", "e"];
   if (containerWidth >= 500) {
     columns = 2;
-    areas = ["a b", "e e", "c d"];
+    areas = ["a b", "c d"];
     if (containerWidth >= 900) {
-      columns = 4;
-      areas = ["a b c d", "e e c d"];
+      columns = 3;
+      areas = ["a b c", "a b d"];
     }
   }
 
@@ -37,7 +37,7 @@ function SessionShine() {
     <>
       <Grid ref={gridEl} columns={columns} areas={areas} gap="10px">
         {photos[session].map((photo, i) => {
-          if (i === 2 || i === 3)
+          if (i === 0 || i === 1)
             return (
               <Cell key={i} area={imageGrid(photo.position)} height={3}>
                 <img src={photo.src} alt={`model-${i}`} />
@@ -46,7 +46,7 @@ function SessionShine() {
 
           return (
             <Cell key={i} area={imageGrid(photo.position)} height={1}>
-              <StyledThreeGrid src={photo.src} maxHeight={"380px"} />
+              <StyledThreeGrid src={photo.src} maxHeight="380px" />
             </Cell>
           );
         })}
@@ -55,4 +55,4 @@ function SessionShine() {
   );
 }
 
-export default SessionShine;
+export default SessionLiquid;
