@@ -1,10 +1,11 @@
 import React from "react";
+import StyledFooter from "../Styled/StyledFooter";
 
 function Footer() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <StyledFooter>
       <p>All photos © Mara Marsal, 2020</p>
-    </div>
+    </StyledFooter>
   );
 }
 
