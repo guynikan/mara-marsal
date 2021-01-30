@@ -11,35 +11,35 @@ opacity: 1;
 `;
 
 const Shadows = styled(ShadowsSVG)`
-  #Rose {
+  #rose {
     opacity: 0;
   }
 
-  &:hover #Rose {
+  &:hover #rose {
     animation: ${showShadow} 2s ease-out 1s forwards;
   }
 
-  #Green {
+  #green {
     opacity: 0;
   }
 
-  &:hover #Green {
+  &:hover #green {
     animation: ${showShadow} 2s ease-out 1.5s forwards;
   }
 
-  #Blue {
+  #blue {
     opacity: 0;
   }
 
-  &:hover #Blue {
+  &:hover #blue {
     animation: ${showShadow} 2s ease-out 2.5s forwards;
   }
 
-  #Purple {
+  #purple {
     opacity: 0;
   }
 
-  &:hover #Purple {
+  &:hover #purple {
     animation: ${showShadow} 2s ease-out 3.5s forwards;
   }
 `;
