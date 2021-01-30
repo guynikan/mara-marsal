@@ -22,8 +22,6 @@ function SessionShadow() {
     };
   });
 
-  // avaliar possibilidade de colocar os detalhes de cada session
-  // diretamente na prop do obj photos
   let columns = 1;
   let areas = ["a", "b", "c", "d", "e"];
   if (containerWidth >= 500) {
