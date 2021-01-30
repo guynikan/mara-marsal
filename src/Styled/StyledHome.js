@@ -7,7 +7,7 @@ import illustration2 from "../Assets/Svg/Shine.svg";
 
 const StyledEnterGallery = styled.div`
   display: flex;
-  margin: 0 100px;
+  margin: 0 10%;
   justify-content: center;
   height: 100vh;
   max-height: calc(100vh - 170px);
